@@ -1,0 +1,19 @@
+To run this code you need to:
+1. Make sure source-display folder exist on nginx folder (/etc/nginx/source-display).
+2. Include source-display/config on your server block.
+3. PLEASE check all the configurations in config file are correct for your server.
+4. restart Nginx service
+
+Now every *.phps you'll enter on your server will show the source code! including highlighting, numbering and numbering anchors.
+
+Examples:
+http://example.com/index.phps // Wil show the content of index.phps with highlight and numbering.
+
+http://example.com/index.phps#100 // Same as above, only the page will jump to line 100.
+
+
+USEFULL TIP: if you want to show the source of all the php files in the folder, run:
+# for i in `ls | grep .php`; do ln -s `pwd`/"$i" `pwd`/"$i"s; done
+
+Ideas, Bug reports and code donations are welcomed!
+https://github.com/Ddorda/source-display
