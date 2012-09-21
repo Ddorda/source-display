@@ -31,10 +31,12 @@ function highlight_num($file)
         text-align: right; 
         margin-right: 6pt; 
         padding-right: 6pt; 
+	line-height: 15px;
         border-right: 1px solid gray;} 
 
         body {margin: 0px; margin-left: 5px;} 
         td {vertical-align: top;} 
+	span {line-height: 15px;}
         code {white-space: nowrap;} 
     </style>';
     
